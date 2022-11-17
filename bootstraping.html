@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Practice</title>
+    <meta name="description" content="Page description here" />
+    <meta http-equiv="Content-type" content="text/html"; charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/98ebff903a.js" crossorigin="anonymous"></script>
+<script src="https://kendo.cdn.telerik.com/2018.2.620/js/kendo.all.min.js"></script>
+<style>
+  .container-fluid{
+    /* background-color: orange; */
+    /* text-align: center; */
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    /* font-style: italic; */
+
+
+  }
+  .bg1{
+    background-color:orange;
+  }
+  .bg2{
+    background-color: blue;
+  }
+  .bg3{
+    background-color: yellow;
+  }
+  .header{
+    background-color: #2B4A49;
+    text-align: center;
+  }
+  img{
+   max-width: 20%;
+
+  }
+
+.bgcolor{
+  background-color: #7766;
+}
+footer {
+    clear: both;
+    position: relative;
+
+    margin-top: 320px;
+    background-color: #2B4A49;
+    /* margin-top: 100%; */
+}
+.progress-bar{
+
+  background-color: #2B4A49;
+}
+</style>
+
+
+
+<script>
+// $(document).ready(function(){
+//   $('#ppp').val({value: 80});
+//
+//   });
+
+
+
+// $( "#pb" ).each(function() {
+//   let percent = $(this).attr('aria-valuenow');
+//   percent = percent * 100 / 30;
+//
+//   //For too high values :
+//   if(percent > 100){
+//     percent = 100;
+//   }
+//
+//   //$(this).css('width', percent+'%' );
+//
+//   //With animation as asked :
+//     $(this).animate({width: percent+'%' }, 2000);
+// });
+
+// $(document).ready(function(){
+//   var i;
+//   for(i=0;i<=100;i++){
+//   $("#pb").val({aria-valuenow:i});
+//   }
+// });
+
+$(document).ready(function () {
+
+  var i;
+  for(i = 0; i <= 100; i++){
+    $("#spa").text(i+"%");
+    $('#pb').width(i + "%").attr('aria-valuenow', i);
+  }
+
+
+});
+
+
+
+</script>
+
+  </head>
+  <body>
+<div class="container-fluid">
+
+      <!-- <div class="row">
+        <div class="col-lg-4 bg1">
+          this is div 1
+        </div>
+        <div class="col-lg-4 bg2">
+          this is div 2
+        </div>
+        <div class="col-lg-4 bg3">
+          this is div 3
+        </div>
+      </div> -->
+      <div class="row header">
+
+        <h1> Analytics <i class="fa-sharp fa-solid fa-magnifying-glass"></i></h1>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Smart City</a></li>
+            <li><a class="dropdown-item" href="#">Crime Anomoly Dectection</a></li>
+            <li><a class="dropdown-item" href="#">Smart Farming</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!--     2nd bar -->
+
+  </div>
+</nav>
+    <div class="container-fluid">
+      <div class="row bgcolor" >
+        <h2>Introduction</h2>
+
+        <p> &nbsp &nbsp &nbsp &nbsp The Quick Analytics is IOT and AI based Company</p>
+      </div>
+
+      <div class="row">
+        <table class="table table-dark table-striped-columns table-hover ">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mansoor</td>
+        <td>Akhunzada</td>
+        <td>CEO</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Muhammad</td>
+        <td>Shehbaz</td>
+        <td>Backend Developer</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td >Fahad</td>
+        <td> Ali </td>
+        <td>Frontend Developer</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<footer>
+</div>
+  <div class="progress">
+<div class="progress-bar" id="pb" role="progressbar" aria-label="Example with label" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" ><span id="spa">0%<span></div>
+</div>
+</footer>
+
+
+  </body>
+</html>
