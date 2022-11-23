@@ -83,15 +83,15 @@
 // });
 
 
-$(document).ready(function(){
-  $(".btn1").click(function(){
-  $(".div3").animate({height:300},2000);
-  $(".div3").animate({width:300},2000);
-  });
-  $(".btn2").click(function(){
-    $(".div3").hide();
-  });
-  $(".btn3").click(function(){
-    $(".div3").stop();
-  });
-});
+// $(document).ready(function(){
+//   $(".btn1").click(function(){
+//   $(".div3").animate({height:300},2000);
+//   $(".div3").animate({width:300},2000);
+//   });
+//   $(".btn2").click(function(){
+//     $(".div3").hide();
+//   });
+//   $(".btn3").click(function(){
+//     $(".div3").stop();
+//   });
+// });
