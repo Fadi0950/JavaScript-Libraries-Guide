@@ -15,20 +15,20 @@ catch(PDOException $e)
 //    die("db error");
 }
 $data = $conn->query("select * from  members");
-// while($row = $row->fetch()){
+// while($row = $data->fetch()){
 //     echo "<br>".$row['First'] . "<br>".$row['Last']."<br>".$row['Role'];
 // }
 //
-// foreach($row as $rows) {
+// foreach($data as $rows) {
 //     echo $rows['Role'] . "<br>";
 // } 
 // 
 
-// $one = $row->fetchColumn();
+// $one = $data->fetchColumn();
 // echo $one;
 
 
-$all = $data->fetchAll();
+// $all = $data->fetchAll(PDO::FETCH_ASSOC);
 // echo $all;
 echo "<pre>";
 print_r($all);
